@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+    "http://www.w3.org/TR/html4/strict.dtd">
+<head>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/my-css.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+        </script>
+    <script type="text/javascript" src="jquery.sparkline.min.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+        /** This code runs when everything has been loaded on the page */
+        /* Inline sparklines take their values from the contents of the tag */
+        $('.inlinesparkline').sparkline(); 
+
+        /* Sparklines can also take their values from the first argument 
+        passed to the sparkline() function */
+        var myvalues = [10,8,5,7,4,4,1];
+        $('.dynamicsparkline').sparkline(myvalues, {
+            width: '100px'});
+        
+
+        /* The second argument gives options such as chart type */
+        $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green', barWidth: 15} );
+
+        /* Use 'html' instead of an array of values to pass options 
+        to a sparkline with data in the tag */
+        $('.inlinebar').sparkline('html', {type: 'bar', barWidth: 15, tooltipFormat: '{{offset:offset}} {{value}}', barColor: 'red'} );
+    });
+    </script>
+</head>
+<body>
+
+
+<div class="container" style="width:100%; padding:0;">
+    <img src="./img/CinderAlice4.jpg" style="width:100%" class="img-responsive">    
+</div>
+
+
+
+<div class="col-sm-3"></div>
+      <div class="col-sm-9" >
+          <h1>Why Alice Could Kick Cinderella's Ass</h1>         
+</div>
+
+
+
+
+    <div class="col-md-4">
+    
+    <!-- start slipsum code -->
+
+<p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
+        
+<p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p>
+        
+<p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass. </p> 
+        </div>
+
+
+    
+        <div class="col-md-2"><h3>Category</h3></div>
+        <div class="col-md-2"><h3>Alice</h3></div>
+        <div class="col-md-2"><h3>Cinderella</h3></div>
+        <div class="col-md-2"><h3>Who Kicked Ass?</h3></div>
+
+        <div class="col-sm-2"><p>Curiousity</p></div>
+        <div class="col-sm-2"><span class="inlinebar">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="inlinebar">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>Alice!</p></div>
+
+    
+        <div class="col-sm-2"><p>Courage</p></div>
+        <div class="col-sm-2"><span class="inlinebar">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="inlinebar">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>Alice</p></div>
+    
+    
+        <div class="col-sm-2"> <p>Disrespect</p></div>
+        <div class="col-sm-2"><span class="inlinebar">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="inlinebar">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>Alice!</p></div>
+
+
+        <div class="col-sm-2"> <p>Animals</p></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>Hard to Say..</p></div>
+
+    
+        <div class="col-sm-2"><p> Bridal Endeavors</p></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">0,0,0,0,0,0</span></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">5,3,4,5,4,5</span></div>
+        <div class="col-sm-2"><p>Alice!</p></div>
+
+
+        <div class="col-sm-2"><p>Not Putting Up with any Shit</p></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>Alice!</p></div>
+
+
+    
+        <div class="col-sm-2"><p> Hallucinogens</p></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>Alice!</p></div>
+
+
+        <div class="col-sm-2"><p> Practical Shoes</p></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>Alice!</p></div>
+
+
+        <div class="col-sm-2"><p> Getting Rescued</p></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="dynamicsparkline">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>Alice!</p></div>
+      
+    
+        <div class="col-sm-2"><p>Crying</p></div>
+        <div class="col-sm-2"><span class="inlinebar">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><span class="inlinebar">1,3,4,5,3,5</span></div>
+        <div class="col-sm-2"><p>It's a Tie</p></div>
+    
+
+
+
+
+</body>
+</html>
