@@ -3,11 +3,11 @@
 h1 { 
   font-family: Helvetica;
     font-weight: bold; 
-    color: #FF6F40;
-    padding: 50px;
+    color: #A5284F;
+    padding: 100px 0px 100px 180px;
+    margin: 0 auto;
 
 }
-
 
 .dynamicsparkline {
     width: 2em;
@@ -35,6 +35,13 @@ p {
     font-family: Helvetica;
     font-size: 1.2em;
 }
+
+.description {
+    font-family: Helvetica;
+    font-size: 1 em;
+    padding-top: 20px;
+}
+
 
 .jqstooltip {
   -webkit-box-sizing: content-box;
